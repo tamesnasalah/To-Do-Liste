@@ -1,0 +1,104 @@
+/*
+activity u00: main page
+=======================
+Group D3. Authors:
+Jakub Kobedza
+Bol Daoudov
+=======================
+*/
+
+button{
+    color: black;
+}
+html, body{
+  font-size: 16px;
+}
+
+header, main{
+    font-family: "Segoe UI",sans-serif, "SF Pro";
+}
+/*//////////////////////////////top-part//////////////////////////////*/
+header{
+    position: sticky;
+    background-color: #ffffff;
+    top: 0;
+}
+
+.u00-top-first-row{
+    display: grid;
+    grid-template-columns: max-content auto max-content max-content;
+}
+
+.u00-top-second-row{
+    display: grid;
+    /*u00-remove-filter-icon = max-content | h1 = auto*/
+    grid-template-columns: max-content auto;
+}
+
+.u00-filter-icon, .u00-sortier-icon, .u00-kategorie-icon, .u00-remove-filter-icon{
+    width: 1.5em;
+    height: 1.5em;
+
+}
+
+/*//////////////////////////////list-title//////////////////////////////*/
+h1{
+    font-size: 4rem;
+    margin: 0.25em 0;
+  font-weight: bold;
+}
+
+/*//////////////////////////////task-list//////////////////////////////*/
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/*//////////////////////////////overall//////////////////////////////*/
+body{
+    background-color: #ffffff;
+    margin: 4%;
+}
+
+@supports (-webkit-touch-callout: none){
+    #add-task-button{
+        border-radius: 2em;
+        background-color: #ba99d2;
+        font-size: 5em;
+        color: #dfc0f6;
+        width: 1.5em;
+        height: 1.5em;
+
+
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        padding: 0;
+    }
+}
+
+#add-task-button{
+    border-radius: 2em;
+    background-color: #ba99d2;
+    font-size: 5em;
+    color: #dfc0f6;
+    width: 1.5em;
+    height: 1.5em;
+
+
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+main button, header button {
+    font-size: 3em;
+    border-width: 0;
+    background-color: unset;
+}
+
+#empty-space{
+  height: 30rem;
+}
+
+

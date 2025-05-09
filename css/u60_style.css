@@ -1,0 +1,81 @@
+/*
+activity u60: manage sorting
+=======================
+Group D3. Authors:
+Jakub Kobedza
+Bol Daoudov
+=======================
+*/
+
+button{
+    color: black;
+}
+.u60_top{
+    display: grid;
+    grid-template-columns: auto max-content;
+    background-color: unset;
+    font-size: 2.25rem;
+    text-align: left;
+
+    padding: 1.25rem 1.25rem 1.25rem 1rem;
+
+
+    border-bottom: 2px solid black;
+
+    border-left: none;
+    border-top: none;
+    border-right: none;
+
+
+    border-top-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+}
+.Content{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 15%;
+    top: 2%;
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 2.5rem;
+}
+.Content button:not(:first-child){
+    font-size: 2.25rem;
+    text-align: left;
+    background-color: unset;
+    padding: .8rem 0 .8rem 2rem;
+    border:none;
+}
+
+.Content button:last-child:not(.u60_top){
+    padding-bottom: 2rem;
+}
+
+.Content button:last-child{
+  border-bottom-right-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
+}
+
+.Content button:active{
+    border: black 2px solid;
+    background-color: lightgrey;
+}
+
+.big .arrows{
+    width: 1.5rem;
+    height: 2rem;
+}
+
+.small .arrows{
+    width: 2rem;
+    height: 1.5rem;
+}
+
+.small{
+    width: 60%;
+}
+
+.big{
+    width: 75%;
+}

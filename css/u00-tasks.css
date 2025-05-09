@@ -1,0 +1,153 @@
+/*
+activity u00: main page
+=======================
+Group D3. Authors:
+Jakub Kobedza
+Bol Daoudov
+=======================
+*/
+
+/* -JK
+/////////////////////////////Task and subtask Layout/////////////////////////////
+*/
+button{
+    color: black;
+    font-family: "Segoe UI",sans-serif, "SF Pro";
+}
+.u00-main-task{
+    display: grid;
+    grid-template-columns: 12% 78% 10%;
+    margin: 2.5% 0 2.5% 5%;
+}
+
+.u00-mid-sec{
+    width: 75%;
+    margin-left: 1em;
+}
+
+.u00-sub-task{
+    display: grid;
+    grid-template-columns: 12% 88%;
+    margin: 1% 0 1% 20%;
+}
+
+/*task-title*/
+h2{
+    font-size: 3rem;
+    font-family: "Segoe UI",sans-serif, "SF Pro";
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+/*subtask-title*/
+h3{
+    font-size: 2.5rem;
+    font-family: "Segoe UI",sans-serif, "SF Pro";
+    margin: 0.2em 0;
+    overflow-wrap: break-word;
+
+}
+
+/* -JK
+/////////////////////////////Styling for a finished task/subtask/////////////////////////////
+*/
+.u00-finished input{
+    background-color: #777777;
+    color: #777777;
+}
+
+.u00-finished li, .u00-finished h2, .u00-finished h3{
+    color: #999999;
+    border-color: #999999;
+}
+
+/* -JK
+/////////////////////////////Styling for a not finished task/subtask/////////////////////////////
+*/
+/* -JK
+----------------task-check----------------
+*/
+.u00-task-check{
+    border-color: #4d5154;
+    background-color: white;
+    border-radius: 100%;
+    border-width: thin;
+    border-style: solid;
+    display: block;
+    height: 4em;
+    width: 4em;
+    margin: 0.3em;
+    color: white;
+}
+
+/* -JK
+----------------Mid-Sec----------------
+*/
+.u00-tag-container{
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+.u00-tag-container > li{
+    list-style: none;
+    display: inline;
+
+    font-size: 1.5em;
+    font-family: "Segoe UI",sans-serif, "SF Pro";
+    margin-right: 0.5em;
+    padding: 0 0.5em;
+
+    border-radius: 0.9em;
+    border-width: 0.1em;
+    border-style: solid;
+
+    overflow-wrap: break-word;
+}
+
+.u00-priority{
+    color: #ff0000;
+    border-color: #000000;
+}
+
+/* -JK
+-------------rework-task-button-------------
+*/
+.u00-gear-icon{
+    fill: #9c9c9c;
+    width: 1.25em;
+    height: 1.25em;
+}
+
+/* -JK
+-------------Tag-Colors(categories)-------------------
+*/
+.blue-tag{
+    border-color: #3333ff;
+    color: #3333ff;
+}
+
+.green-tag{
+    border-color: #089f0f;
+    color: #089f0f;
+}
+
+.red-tag{
+    border-color: #ff3333;
+    color: #ff3333;
+}
+
+.yellow-tag{
+    border-color: #fac510;
+    color: #fac510;
+}
+
+.orange-tag{
+    border-color: #ffaa33;
+    color: #ffaa33;
+}
+
+.purple-tag{
+    border-color: #aa33ff;
+    color: #aa33ff;
+}
+

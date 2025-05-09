@@ -1,0 +1,78 @@
+/*
+activity u00: manage filter
+=======================
+Group D3. Authors:
+Jakub Kobedza
+Bol Daoudov
+=======================
+*/
+button{
+    color: black;
+}
+.u40-filter-menu{
+    display: flex;
+    flex-direction: column;
+    background: white;
+
+    border-radius: 3rem;
+    border: black 0.1rem solid;
+    width: 60%;
+
+    position: absolute;
+    right: 15%;
+    top: 6%;
+
+  font-family: sans-serif;
+
+}
+
+.u40-title{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+
+    font-size: 2.3rem;
+    text-align: left;
+    color: #aaaaaa;
+}
+
+.u40-subtitle{
+    padding-left: 1.5rem;
+    font-size: 2.3rem;
+    text-align: left;
+}
+
+.u40-filter-option{
+    padding-left: 1rem;
+    font-size: 2.3rem;
+    text-align: left;
+}
+
+.u40-filter-menu button{
+    display: grid;
+    grid-template-columns: auto max-content;
+
+  font-family: sans-serif;
+    background: none;
+    padding: 1rem 0;
+    border-top: black solid thin;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.u40-arrow-left{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: auto 0;
+    padding-right: 2rem;
+}
+
+.u40-arrow-down{
+    width: 1.5rem;
+    height: 2rem;
+    margin: auto 0;
+    padding-right: 2rem;
+}
+
+

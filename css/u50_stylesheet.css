@@ -1,0 +1,243 @@
+
+/*
+////////////////////////////////////main-menu////////////////////////////////////
+*/
+@supports (-webkit-touch-callout: none) {
+
+  #u50_input_field, #u50_delete_warning{
+    background: white;
+    border-radius: 2rem;
+    border: black solid thin;
+
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    width: 60%;
+/*brauchst du noch lange?
+idk die scheiße will sich hier nicht nach links verschieben lassen :(
+was genau soll nach links?
+das feld das kommt wenn man ketegorie erstellen öffnet
+auf ios? ja
+
+meinst du, dass soll so sein?
+
+
+
+*/
+    position: fixed;
+    top: 40%;
+    left: 0;
+    font-family: "Segoe UI",sans-serif, "SF Pro";
+    font-size: 2.25rem;
+
+  }
+
+  #u50_input_field img, #u50_delete_warning img{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-left: 0;
+  }
+
+  #u50_input_field input{
+    border-radius: 4rem;
+    height: 3vh;
+    font-size: 2.5rem;
+  }
+
+  #u50_input_field input::placeholder{
+    color: #b6b6b6;
+  }
+
+  #u50_input_field button, #u50_delete_warning button{
+    background: none;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+button{
+  color: black;
+}
+#u50_category_menu{
+  position: fixed;
+  top: 6%;
+  right: 10%;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 3rem;
+  border: solid black 0.1rem;
+  background: white;
+
+  width: 65%;
+}
+
+.u50_category > button{
+  padding: 1.5rem 2rem;
+  text-align: left;
+
+  font-size: 2.3rem;
+
+  background: none;
+  border-style: none;
+
+  font-family: "Segoe UI",sans-serif, "SF Pro";
+
+}
+
+.u50_category > button + button{
+  border-top: solid black 0.1rem;
+}
+
+/*
+////////////////////////////////////input-field & delete-warning////////////////////////////////////
+*/
+
+#u50_input_field, #u50_delete_warning{
+  background: white;
+  border-radius: 2rem;
+  border: black solid thin;
+
+
+  display: flex;
+  flex-direction: column;
+
+  width: 70%;
+  padding: 1rem 1rem 0 1rem;
+
+  position: fixed;
+  top: 40%;
+  left: 11%;
+  right: 11%;
+  font-family: "Segoe UI",sans-serif, "SF Pro";
+  font-size: 2.25rem;
+
+}
+
+#u50_input_field img, #u50_delete_warning img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#u50_input_field input{
+  border-radius: 4rem;
+  height: 8svh;
+  font-size: 2rem;
+}
+
+#u50_input_field input::placeholder{
+  color: #b6b6b6;
+}
+
+#u50_input_field button, #u50_delete_warning button{
+  background: none;
+  border: none;
+  font-size: 5rem;
+}
+/*
+
+*/
+#u50_input_field > div, #u50_delete_warning > div{
+  display: grid;
+  grid-template-columns: 12% auto 12%;
+  padding: 0  4rem;
+}
+
+/*
+//////////////////////////////////error-message///////////////////////////////////////////
+*/
+
+#u50_error_message{
+  border: black solid thin;
+  border-radius: 1rem;
+
+  background: white;
+  max-width: 50%;
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+
+  font-size: 2.25rem;
+
+
+  padding: 1rem 1rem;
+  z-index: 1001;
+
+  font-family: "Segoe UI",sans-serif, "SF Pro";
+
+}
+
+/*
+////////////////////////////////////category-list//////////////////////////////////////////////
+*/
+
+#u50_category_list{
+  position: absolute;
+  z-index: 1001;
+  top: 20%;
+  left:5%;
+
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 3rem;
+  border: solid black 0.1rem;
+  background: white;
+
+  width: 90%;
+  font-size: 1.5rem;
+
+}
+
+
+#u50_title{
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2.5rem;
+
+    color: #aaaaaa;
+    text-align: left;
+  font-size: 2rem;
+  font-family: sans-serif;
+
+}
+
+#u50_category_list > button{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2.5rem;
+  text-align: left;
+
+  background: none;
+  border-style: none;
+  font-size: 2rem;
+  font-family: sans-serif;
+
+
+
+}
+
+#u50_category_list button{
+  border-top: solid black 0.1rem;
+}
+
+
+/*andere*/
+
+
+#u50_background_black{
+  width: 200%;
+  height: 200%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+}

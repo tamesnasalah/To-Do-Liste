@@ -1,0 +1,118 @@
+@supports (-webkit-touch-callout: none){
+  #open-subtasks{
+    margin-left: 0;
+  }
+}
+button{
+  color: black;
+  font-weight: normal;
+}
+.u20-popup-model,
+.u20-popup-model::placeholder,
+.u20-popup-model input[type=text],
+.drop-down-menu select+option,
+.manage-subtask-submit,
+#drop-down-category,
+#drop-down-priority{
+  font-family: "Segoe UI", sans-serif;
+  font-size: 4vh;
+  text-align: left;
+}
+.manage-subtask-submit,
+.drop-down-menu select,
+.deadline-input,
+.deadline-input input,
+.setting-button{
+  border: transparent;
+  background-color: transparent;
+}
+
+input[type=text]{
+  padding-left: 3%;
+}
+.u20-popup-model select option{
+  font-size: 3vh;
+}
+.u20-popup-model{
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.u20-popup-content{
+  z-index: 1001;
+  position: fixed;
+  width: 82%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 40px;
+
+}
+
+.new-task-input{
+  height: 3.5rem;
+  width: 87%;
+  border-radius: 40px;
+  border: 1px solid #707070;
+  display: grid;
+  margin: 1.5rem auto;
+}
+
+#u20-button-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#u20-button-row > :first-child{
+  margin-left: 3rem;
+}
+
+#u20-button-row > :last-child{
+  margin-right: 3rem;
+}
+
+
+.deadline{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#date-input{
+  font-size: 1rem;
+  border-color: transparent;
+  zoom: 2;
+
+}
+
+.drop-down-menu select{
+  width: 91%;
+  margin-left: 4%;
+  position: relative;
+}
+.manage-subtask-submit{
+  cursor: pointer;
+  margin-left: 4%;
+}
+
+.setting-button{
+  cursor: pointer;
+  font-size: 1rem;
+  position: sticky;
+}
+
+.setting-button img{
+  width: 2rem;
+  height: 2rem;
+}
